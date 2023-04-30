@@ -18,46 +18,60 @@ class ViewController: UIViewController {
     @IBOutlet var mulButton: UIButton!
     @IBOutlet var divButton: UIButton!
     
-    // MARK: ??
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     // MARK: IBActions
+    // MARK: add
     @IBAction func add(sender: UIButton){
         var resultText: String
-        if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
+        if (firstField.text?.isEmpty == true && secondField.text?.isEmpty == true){
+            resultText = "값을 먼저 입력해주세요."
+        } else if (firstField.text?.isEmpty == true || secondField.text?.isEmpty == true){
+            resultText = "숫자를 모두 입력해주세요."
+        } else if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
             var result = firstNumber + secondNumber
-            resultText = "\(firstNumber) + \(secondNumber) = \(result)."
+            resultText = "\(firstNumber) + \(secondNumber) = \(result)"
         } else {
             resultText = "Please enter valid numbers in both text fields."
         }
         resultLabel.text = resultText
     }
     
+    // MARK: subtract
     @IBAction func sub(sender: UIButton){
         var resultText: String
-        if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
+        if (firstField.text?.isEmpty == true && secondField.text?.isEmpty == true){
+            resultText = "값을 먼저 입력해주세요."
+        } else if (firstField.text?.isEmpty == true || secondField.text?.isEmpty == true){
+            resultText = "숫자를 모두 입력해주세요."
+        } else if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
             var result = firstNumber - secondNumber
-            resultText = " \(firstNumber) - \(secondNumber) = \(result)."
+            resultText = " \(firstNumber) - \(secondNumber) = \(result)"
         } else {
             resultText = "Please enter valid numbers in both text fields."
         }
         resultLabel.text = resultText
     }
     
+    // MARK: multiply
     @IBAction func mul(sender: UIButton){
         var resultText: String
-        if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
+        if (firstField.text?.isEmpty == true && secondField.text?.isEmpty == true){
+            resultText = "값을 먼저 입력해주세요."
+        } else if (firstField.text?.isEmpty == true || secondField.text?.isEmpty == true){
+            resultText = "숫자를 모두 입력해주세요."
+        } else if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
             var result = firstNumber * secondNumber
-            resultText = " \(firstNumber) x \(secondNumber) = \(result)."
+            resultText = " \(firstNumber) x \(secondNumber) = \(result)"
         } else {
             resultText = "Please enter valid numbers in both text fields."
         }
         resultLabel.text = resultText
     }
     
-    //switch 문으로??
+    // MARK: division
     @IBAction func div(sender: UIButton){
         var resultText: String
         if (firstField.text?.isEmpty == true && secondField.text?.isEmpty == true){
@@ -66,7 +80,7 @@ class ViewController: UIViewController {
             resultText = "숫자를 모두 입력해주세요."
         } else if var firstNumber = Int(firstField.text ?? ""), var secondNumber = Int(secondField.text ?? "") {
                 var result = firstNumber / secondNumber
-                resultText = "\(firstNumber) / \(secondNumber) = \(result)."
+                resultText = "\(firstNumber) / \(secondNumber) = \(result)"
                 //나누기에서 0 예외처리하기
                 if (firstNumber == 0){
                     resultText = "0은 나눌 수 없습니다."
