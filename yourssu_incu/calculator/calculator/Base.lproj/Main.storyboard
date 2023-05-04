@@ -16,73 +16,216 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-tb-aUW">
-                                <rect key="frame" x="146" y="420" width="101" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-VT-9FB">
+                                <rect key="frame" x="46.666666666666657" y="403" width="300" height="39"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="jv3-aM-9YO"/>
+                                    <constraint firstAttribute="height" constant="39" id="npA-IA-oFZ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="더하기"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="빼기">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="addWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYj-Ya-o4F"/>
+                                    <action selector="subtractWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aA2-zx-veU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-VT-9FB">
-                                <rect key="frame" x="146" y="498" width="101" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhR-vc-5jj">
+                                <rect key="frame" x="46.666666666666657" y="452" width="300" height="39"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Cxv-9r-Ndh"/>
+                                    <constraint firstAttribute="width" constant="300" id="dCY-92-Neu"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="빼기"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="곱하기">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="subWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SC6-d9-7RG"/>
+                                    <action selector="multiplyWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0k-K8-uxg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhR-vc-5jj">
-                                <rect key="frame" x="146" y="573" width="101" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-jZ-hSt">
+                                <rect key="frame" x="46.666666666666657" y="501" width="300" height="39"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="1My-4d-zMV"/>
+                                    <constraint firstAttribute="width" constant="300" id="giM-0U-x0b"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="곱하기"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="나누기">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="mulWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAC-Iq-wn1"/>
+                                    <action selector="divideWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTR-77-a3C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-jZ-hSt">
-                                <rect key="frame" x="146" y="647" width="101" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="나누기"/>
-                                <connections>
-                                    <action selector="divWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yuZ-eR-Paj"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-lQ-ozx">
-                                <rect key="frame" x="114" y="163" width="173" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="첫번째 숫자를 입력해주세요." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-lQ-ozx">
+                                <rect key="frame" x="46.666666666666657" y="216" width="300" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Hb0-Tc-rYQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="s7g-KC-jI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVd-19-leo">
-                                <rect key="frame" x="114" y="222" width="185" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="버튼을 눌러주세요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-kN-znM">
-                                <rect key="frame" x="114" y="317" width="193" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-kN-znM">
+                                <rect key="frame" x="140.66666666666666" y="316" width="111.66666666666666" height="18"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="버튼을">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="눌러주세요">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AppleSDGothicNeo-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="!">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-tb-aUW">
+                                <rect key="frame" x="46.666666666666657" y="354" width="300" height="39"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="669-uZ-NFN"/>
+                                    <constraint firstAttribute="width" constant="300" id="vtA-rX-B35"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="더하기">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VZ2-cy-gf4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="두번째 숫자를 입력해주세요." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jST-6v-yH3">
+                                <rect key="frame" x="46.666666666666657" y="261" width="300" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kpB-D8-uUU"/>
+                                    <constraint firstAttribute="width" constant="300" id="n1k-2C-lRW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JSH-tb-aUW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Xd-SQ-AV8"/>
+                            <constraint firstItem="bUD-VT-9FB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Xe-sg-6ph"/>
+                            <constraint firstItem="DhR-vc-5jj" firstAttribute="top" secondItem="bUD-VT-9FB" secondAttribute="bottom" constant="10" id="BhS-Y7-Bcu"/>
+                            <constraint firstItem="Jn8-lQ-ozx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="GPU-S8-Afh"/>
+                            <constraint firstItem="a4F-kN-znM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPp-Ah-pph"/>
+                            <constraint firstItem="DhR-vc-5jj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IT2-nc-rQf"/>
+                            <constraint firstItem="JSH-tb-aUW" firstAttribute="top" secondItem="a4F-kN-znM" secondAttribute="bottom" constant="20" id="TGu-yT-Nmk"/>
+                            <constraint firstItem="bUD-VT-9FB" firstAttribute="top" secondItem="JSH-tb-aUW" secondAttribute="bottom" constant="10" id="Ugn-uq-oCG"/>
+                            <constraint firstItem="a4F-kN-znM" firstAttribute="top" secondItem="jST-6v-yH3" secondAttribute="bottom" constant="20" id="ZSL-J5-5YO"/>
+                            <constraint firstItem="PSx-jZ-hSt" firstAttribute="top" secondItem="DhR-vc-5jj" secondAttribute="bottom" constant="10" id="mCA-t7-eRl"/>
+                            <constraint firstItem="jST-6v-yH3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oRS-ka-ggC"/>
+                            <constraint firstItem="PSx-jZ-hSt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgd-6O-ISy"/>
+                            <constraint firstItem="Jn8-lQ-ozx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t3b-Se-aqA"/>
+                            <constraint firstItem="jST-6v-yH3" firstAttribute="top" secondItem="Jn8-lQ-ozx" secondAttribute="bottom" constant="10" id="tVD-f7-RCx"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="JSH-tb-aUW" id="rjl-Ua-e5x"/>
-                        <outlet property="divButton" destination="PSx-jZ-hSt" id="q0p-yo-Go2"/>
-                        <outlet property="firstField" destination="Jn8-lQ-ozx" id="rbo-ed-EGa"/>
-                        <outlet property="mulButton" destination="DhR-vc-5jj" id="gQl-c7-Z4l"/>
-                        <outlet property="resultLabel" destination="a4F-kN-znM" id="OIK-lP-dx6"/>
-                        <outlet property="secondField" destination="qVd-19-leo" id="UOj-SW-TN7"/>
-                        <outlet property="subButton" destination="bUD-VT-9FB" id="Mmo-NS-feo"/>
+                        <outlet property="addButton" destination="JSH-tb-aUW" id="6Mv-2b-4Xq"/>
+                        <outlet property="divideButton" destination="PSx-jZ-hSt" id="5l1-Np-scY"/>
+                        <outlet property="firstField" destination="Jn8-lQ-ozx" id="szk-MR-S1l"/>
+                        <outlet property="multiplyButton" destination="DhR-vc-5jj" id="Ov6-oO-Gdd"/>
+                        <outlet property="resultLabel" destination="a4F-kN-znM" id="GDS-xX-Sfr"/>
+                        <outlet property="secondField" destination="jST-6v-yH3" id="zWg-OR-NBt"/>
+                        <outlet property="subtractButton" destination="bUD-VT-9FB" id="NyR-DY-sdj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,6 +236,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
