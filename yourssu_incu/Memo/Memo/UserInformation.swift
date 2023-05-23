@@ -7,6 +7,7 @@
 
 import Foundation
 class UserInformation {
+    //싱글톤 활용하여 데이터 모아놓기
     //타입프로퍼티 생성
     static let shared: UserInformation = UserInformation()
     

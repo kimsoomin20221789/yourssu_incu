@@ -20,32 +20,32 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memo" textLabel="drS-sf-CtC" detailTextLabel="F54-27-lvy" rowHeight="94" style="IBUITableViewCellStyleSubtitle" id="PeA-qE-wZR" customClass="MemoTableViewCell" customModule="Memo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="94"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memo" textLabel="drS-sf-CtC" detailTextLabel="F54-27-lvy" rowHeight="78" style="IBUITableViewCellStyleSubtitle" id="PeA-qE-wZR" customClass="MemoTableViewCell" customModule="Memo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PeA-qE-wZR" id="i8g-rM-xLc">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="78"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drS-sf-CtC">
-                                                    <rect key="frame" x="20" y="30.999999999999996" width="25" height="14.333333333333334"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="drS-sf-CtC">
+                                                    <rect key="frame" x="20" y="17" width="31.666666666666668" height="20.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F54-27-lvy">
-                                                    <rect key="frame" x="19.999999999999996" y="47.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <rect key="frame" x="19.999999999999996" y="40.666666666666671" width="48.666666666666664" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="content" destination="F54-27-lvy" id="QTA-Ax-gar"/>
-                                            <outlet property="title" destination="drS-sf-CtC" id="axI-PI-nNA"/>
+                                            <outlet property="contentLabel" destination="F54-27-lvy" id="dLM-Mo-3gb"/>
+                                            <outlet property="titleLabel" destination="drS-sf-CtC" id="CMV-dY-kZk"/>
                                             <segue destination="WiE-s6-pjv" kind="show" id="bn3-db-BtE"/>
                                         </connections>
                                     </tableViewCell>
@@ -154,7 +154,7 @@
         <!--메모 상세-->
         <scene sceneID="YbS-QQ-ydD">
             <objects>
-                <viewController id="WiE-s6-pjv" sceneMemberID="viewController">
+                <viewController id="WiE-s6-pjv" customClass="MemoDetailViewController" customModule="Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IlX-PU-a97">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,6 +185,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="메모 상세" id="3oW-od-7ye"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="EWw-mm-8Fg" id="ave-J3-aiA"/>
+                        <outlet property="titleLabel" destination="dU6-6X-wg0" id="p5i-xA-y6E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1t-aI-6MU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
