@@ -22,6 +22,7 @@ class MemoDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         self.titleLabel.text = titleToSet
         self.contentLabel.text = contentToSet
+        self.contentLabel.numberOfLines = 0
     }
     
     //viewDidLoad()
