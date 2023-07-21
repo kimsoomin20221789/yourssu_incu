@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setAction() //어디다가 넣어야될까요??
+        setAction()
     }
     
     func setAction(){
@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         if let calculateButton = sender as? CalculateButton {
             let calculateName = calculateButton.name
             if calculateName == "더하기" {
-                print(3)
                 add()
             } else if calculateName == "빼기" {
                 sub()
@@ -110,7 +109,7 @@ class ViewController: UIViewController {
 
     
     func checking(){
-        if (mainView.value1.text == "" && mainView.value2.text == ""){ //nil로 하면 안되는 이유
+        if (mainView.value1.text == "" && mainView.value2.text == ""){ //nil로 하면 안되는 이유??
             mainView.result.text = "값을 먼저 입력해주세요."
             mainView.result.textColor = .gray
         } else if (mainView.value1.text == "" || mainView.value2.text == ""){
