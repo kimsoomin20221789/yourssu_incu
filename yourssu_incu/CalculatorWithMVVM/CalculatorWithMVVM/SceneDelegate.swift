@@ -17,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //윈도우의 크기를 변경
         window = UIWindow(frame: UIScreen.main.bounds)
         //vc설정
-        let vc = ViewController()
+        let mainViewModel = MainViewModel()
+        let vc = MainViewController(viewModel: mainViewModel)
         //네비게이션 컨트롤러 설정
         let navVC = UINavigationController(rootViewController: vc)
         //뿌리 뷰컨트럴러 설정
