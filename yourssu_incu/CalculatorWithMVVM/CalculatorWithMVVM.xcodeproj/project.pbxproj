@@ -76,21 +76,53 @@
 		803181922A6AB31E00E39EF4 /* CalculatorWithMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				803181932A6AB31E00E39EF4 /* AppDelegate.swift */,
-				803181952A6AB31E00E39EF4 /* SceneDelegate.swift */,
-				803181972A6AB31E00E39EF4 /* MainViewController.swift */,
-				803A423F2A6FB011005D80A6 /* MainViewModel.swift */,
-				803A423B2A6FAF8D005D80A6 /* View.swift */,
-				800B03422A6FB34200B1E00F /* ValueTextField.swift */,
-				803A423D2A6FAFBA005D80A6 /* CalculatorButton.swift */,
-				800B03442A6FB36800B1E00F /* Extension.swift */,
-				8031819C2A6AB31F00E39EF4 /* Assets.xcassets */,
-				8031819E2A6AB31F00E39EF4 /* LaunchScreen.storyboard */,
 				803181A12A6AB31F00E39EF4 /* Info.plist */,
-				80EEAA0F2A8383A0000DFCC5 /* CalculateType.swift */,
-				80EEAA112A8383C0000DFCC5 /* TextFieldStatus.swift */,
+				80459BAF2A8CA36E0029235A /* Main */,
+				80459BA82A8CA2540029235A /* CustomUI */,
+				80459BB12A8CA40A0029235A /* App */,
+				80459BB02A8CA3F30029235A /* Model */,
 			);
 			path = CalculatorWithMVVM;
+			sourceTree = "<group>";
+		};
+		80459BA82A8CA2540029235A /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				803A423D2A6FAFBA005D80A6 /* CalculatorButton.swift */,
+				800B03422A6FB34200B1E00F /* ValueTextField.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		80459BAF2A8CA36E0029235A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				803A423B2A6FAF8D005D80A6 /* View.swift */,
+				803A423F2A6FB011005D80A6 /* MainViewModel.swift */,
+				803181972A6AB31E00E39EF4 /* MainViewController.swift */,
+				800B03442A6FB36800B1E00F /* Extension.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		80459BB02A8CA3F30029235A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80EEAA112A8383C0000DFCC5 /* TextFieldStatus.swift */,
+				80EEAA0F2A8383A0000DFCC5 /* CalculateType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80459BB12A8CA40A0029235A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				803181952A6AB31E00E39EF4 /* SceneDelegate.swift */,
+				803181932A6AB31E00E39EF4 /* AppDelegate.swift */,
+				8031819C2A6AB31F00E39EF4 /* Assets.xcassets */,
+				8031819E2A6AB31F00E39EF4 /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

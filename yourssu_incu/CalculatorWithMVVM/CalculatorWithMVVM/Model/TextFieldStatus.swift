@@ -8,10 +8,8 @@
 import Foundation
 @frozen
 enum TextFieldStatus {
-//    case success(firstNum: Int, secondNum: Int, type: CalculateTpye, result: Int)
-    case success
     case didSingleTextFieldFull
-    case didAllTextFieldEmpty
-    case zeroNumFail
+    case twoEmpty
+    case didButton
 }
 

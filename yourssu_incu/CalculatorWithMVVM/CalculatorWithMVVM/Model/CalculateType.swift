@@ -6,11 +6,10 @@
 //
 
 import Foundation
-
 @frozen
 enum CalculateType {
     case add
     case subtract
-    case mulitply
+    case multiply
     case divide
 }

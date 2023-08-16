@@ -25,13 +25,13 @@ class View: UIView {
     private lazy var pushView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.addSubViews(value1, value2, result, addButton, subButton, mulButton, divButton)
+        view.addSubViews(value1TextField, value2TextField, result, addButton, subButton, mulButton, divButton)
         return view
     }()
     
     
-    let value1: ValueTextField = ValueTextField(name: "첫번째 입력값을 입력하세요.")
-    let value2: ValueTextField = ValueTextField(name: "두번째 입력값을 입력하세요.")
+    let value1TextField: ValueTextField = ValueTextField(name: "첫번째 입력값을 입력하세요.")
+    let value2TextField: ValueTextField = ValueTextField(name: "두번째 입력값을 입력하세요.")
 
     let result: UILabel = {
         let label = UILabel()
@@ -69,18 +69,18 @@ class View: UIView {
             make.height.equalTo(39)
             make.top.equalTo(mulButton.snp.bottom).offset(10)
         }
-        value1.snp.makeConstraints{(make) in
+        value1TextField.snp.makeConstraints{(make) in
             make.leading.trailing.equalToSuperview().inset(47)
             make.height.equalTo(39)
             make.top.equalToSuperview().inset(157)
         }
-        value2.snp.makeConstraints{(make) in
+        value2TextField.snp.makeConstraints{(make) in
             make.leading.trailing.equalToSuperview().inset(47)
             make.height.equalTo(39)
-            make.top.equalTo(value1.snp.bottom).offset(10)
+            make.top.equalTo(value1TextField.snp.bottom).offset(10)
         }
         result.snp.makeConstraints{(make) in
-            make.top.equalTo(value2.snp.bottom).offset(20)
+            make.top.equalTo(value2TextField.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
         }
         result.sizeToFit()
