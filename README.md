@@ -1,5 +1,5 @@
 # yourssu_incu
 유어슈 iOS 인큐베이팅 
 
-
-<img src = "https://gifmaker.me/video-to-gif/viewimage/20230815-19-4CR9dm05eMipBTDS-U6kiW3-HNET">
+1. UITextField와 UITextLabel을 RxCocoa를 사용하여 비동기 작업 처리
+2. 디자인 패턴 : MVC -> MVVM
